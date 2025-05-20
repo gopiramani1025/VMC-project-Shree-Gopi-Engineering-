@@ -1,0 +1,1628 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Lora";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 rgb(206, 199, 199);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.detail {
+    display: flex;
+    background-color: #f79604;
+    height: 50px;
+}
+
+.detail a {
+    color: white;
+    font-size: 1em;
+    margin-left: 60px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.detail img {
+    height: 20px;
+    width: 20px;
+    margin-left: 60px;
+    margin-top: 13px;
+}
+
+.detail p {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-left: -50px;
+}
+
+.detail p:hover {
+    color: #0e66c5;
+}
+
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    background-color: white;
+    border-bottom: 1px solid rgb(227, 225, 225);
+    font-size: 1em;
+    height: 80px;
+    box-shadow: 0 0 10px 0 rgb(206, 199, 199);
+}
+
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    font-size: 1em;
+    font-weight: lighter;
+    padding-right: 30px;
+    margin-top: 30px;
+    list-style: none;
+    color: black;
+    font-family: "Lora";
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+
+}
+
+nav a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f7b204;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav-bar li img {
+    display: none;
+}
+
+.cancel-btn {
+    display: none;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    margin-left: 40px;
+    margin-top: -5px;
+}
+
+.hero {
+    display: grid;
+    gap: 20px;
+    column-gap: 10px;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 400px 400px 0px;
+}
+
+.blurb h1 {
+    height: auto;
+    width: 90%;
+    font-size: 53px;
+    font-weight: 800;
+}
+
+.blurb p {
+    height: auto;
+    width: 90%;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(160, 154, 154);
+    text-align: left;
+}
+
+.blurb .button {
+    margin: 10%;
+}
+
+.btn1 {
+    margin: 4%;
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+    background: #28879a;
+    border: 2px solid #28879a;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn2 {
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+    background: white;
+    border: 2px solid #28879a;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #28879a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background-color: #28879a;
+    border-color: #28879a;
+    color: white;
+}
+
+.box-data {
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+
+.box-data .detail {
+    display: inline-block;
+    width: 100%;
+    height: 200%;
+    text-align: center;
+    color: black;
+    background-color: #f79604;
+}
+
+.box-data .detail span {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.box-data .detail2 {
+    width: 100%;
+    height: 200%;
+    color: white;
+    background-color: black;
+}
+
+.box-data .detail2 span {
+    font-size: 16px;
+    color: white;
+}
+
+.counter {
+    font-size: 40px;
+    height: 70px;
+}
+
+.counter2 {
+    font-size: 40px;
+    height: 70px;
+}
+
+
+.our-service {
+    margin: 6%;
+}
+
+.our-service .heading {
+    line-height: 3px;
+}
+
+
+.our-service .heading h6 {
+    line-height: 1px;
+    font-size: 25px;
+    color: rgb(184, 70, 70);
+}
+
+.our-service .heading h1 {
+    font-size: 28px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    column-gap: 15px;
+}
+
+
+.our-service .box {
+    border-radius: 15px;
+    border: 1px solid rgb(211, 201, 201);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: .3s;
+}
+
+.our-service .box:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05, 1.05);
+}
+
+.our-service .box img {
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 0 1px 2px gray;
+}
+
+.our-service .box:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.our-service .box .white {
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width: 100%;
+    height: 25%;
+}
+
+.our-service .box .white h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(45, 42, 42);
+    letter-spacing: 0.7px;
+    line-height: 30px;
+}
+
+.our-service .box .white p {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(174, 170, 170);
+    letter-spacing: 0.7px;
+    padding: 5px;
+}
+
+
+.our-service .box img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+
+.process-works {
+    margin: 6%;
+}
+
+.process-works .heading h1 {
+    font-size: 30px;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.process-works .box {
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgb(211, 201, 201);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: .3s;
+}
+
+.process-works .box:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05, 1.05);
+}
+
+.process-works .box img {
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.process-works .box .white {
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    background-color: white;
+    width: 100%;
+    height: 25%;
+}
+
+.process h1 {
+    color: rgb(213, 22, 22);
+    justify-content: center;
+    text-align: center;
+}
+
+.process-works .box .white h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(45, 42, 42);
+    letter-spacing: 0.7px;
+    line-height: 30px;
+}
+
+.process-works .box .white p {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(174, 170, 170);
+    letter-spacing: 0.7px;
+    padding: 5px;
+}
+
+.process-works .box img {
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.process-works .box img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.Experience-Machining {
+    height: auto;
+    margin: 5%;
+    padding: 4%;
+    display: grid;
+    gap: 20px;
+    column-gap: 10px;
+    text-align: left;
+    background-color: whitesmoke;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Experience-Machining iframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.Experience h1 {
+    height: auto;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+
+.Experience p {
+    height: auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(72, 69, 69);
+    text-align: left;
+}
+
+.Experience .button {
+    margin: 10%;
+}
+
+.btn01 {
+    margin: 4%;
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+    background: #28879a;
+    border: 2px solid #28879a;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn02 {
+    height: auto;
+    width: 100%;
+    padding: 15px 20px;
+    background: white;
+    border: 2px solid #28879a;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #28879a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn02:hover {
+    background-color: #28879a;
+    border-color: #28879a;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: #f79604;
+}
+
+
+.menu-bar li {
+    list-style: none;
+    line-height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    color: #0e66c5;
+}
+
+
+.footer .detail2 {
+    height: 100%;
+    width: auto;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.footer .detail2 a p {
+    color: white;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.footer .detail2 a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer .detail2 p:hover {
+    color: #0e66c5;
+}
+
+.footer .detail2 img {
+    max-height: 15px;
+    max-width: 15px;
+}
+
+.detail2 h5 {
+    margin-left: 50px;
+}
+
+.logo1 {
+    height: 110px;
+    width: 130;
+}
+
+.Gopi-Engineering {
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 1px;
+    background-color: rgb(157, 36, 36);
+    color: white;
+}
+
+.Gopi-Engineering p {
+    font-size: 16px;
+}
+
+
+
+/* about-us page */
+
+.head-img-about-us {
+    background-image: url(img/metal-industry-workshop-precision-machinery-automated-production-line-robotic-arm-generated-by-ai-free-photo.jpg);
+    padding: 50px 10px;
+}
+
+.head-img-about-us h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.head-img-about-us h1:hover {
+    color: #f79604;
+}
+
+
+.about-us {
+    margin: 5%;
+    height: auto;
+    width: 90%;
+}
+
+.about-us h2 {
+    color: rgb(213, 22, 22);
+    font-size: 20px;
+}
+
+.about-us h1 {
+    font-size: 30px;
+}
+
+.about-us p {
+    color: rgb(158, 155, 155);
+    font-size: 18px;
+}
+
+.clients {
+    padding: 4%;
+}
+
+.clients h2 {
+    color: rgb(213, 22, 22);
+    font-size: 20px;
+}
+
+.clients h1 {
+    font-size: 30px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.testi-box {
+    height: auto;
+    width: auto;
+    border: 1px solid transparent;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.testi-content p {
+    font-size: 13px;
+}
+
+.testi-info h4 {
+    font-size: 13px;
+}
+
+
+/* gallery page */
+
+.head-img-gallery {
+    background-image: url(img/product_innerbanner.jpg);
+    padding: 50px 10px;
+}
+
+.head-img-gallery h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.head-img-gallery h1:hover {
+    color: #f79604;
+}
+
+.img-gallery {
+    text-align: center;
+    margin: 7%;
+    height: auto;
+    width: auto;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.img-gallery img {
+    margin: 1%;
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    row-gap: 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.img-gallery img:hover {
+    opacity: .5;
+}
+
+/* certificate page */
+
+.head-img-Certificate {
+    background-image: url(img/metal-industry-workshop-precision-machinery-automated-production-line-robotic-arm-generated-by-ai-free-photo.jpg);
+    padding: 50px 10px;
+}
+
+.head-img-Certificate h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+}
+
+.head-img-Certificate h1:hover {
+    color: #f79604;
+}
+
+.certificate {
+    margin: 5%;
+    padding: 2%;
+    background-color: #e5dfd4;
+    border-radius: 5%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.certificate .img {
+    max-height: 600px;
+    max-width: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* contact-us page */
+
+.head-contact-us {
+    background-image: url(img/contactus_innerbanner.jpg);
+    padding: 40px 10px;
+}
+
+.head-contact-us h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.head-contact-us h1:hover {
+    color: #f79604;
+}
+
+.contact-us .hero {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us .boox {
+    margin: 5%;
+}
+
+.contact-us .hero img {
+    margin-top: 10px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.contact-us .location {
+    margin-left: 60%;
+    height: 120px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(50, 109, 203);
+}
+
+.contact-us .mobile-no {
+    margin-left: 60%;
+    height: 120px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(50, 109, 203);
+}
+
+.contact-us .email {
+    margin-left: 60%;
+    height: 120px;
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(50, 109, 203);
+}
+
+.form-map {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 20%;
+}
+
+.form-map .form-detail iframe {
+    height: 1100px;
+    width: 150%;
+}
+
+.form-map .map-img iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* get-quote page  */
+
+.head-get-quote {
+    background-image: url(img/contactus_innerbanner.jpg);
+    padding: 40px 10px;
+}
+
+.head-get-quote h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.head-get-quote h1:hover {
+    color: #f79604;
+}
+
+.get-quote-form {
+    margin: 4%;
+    text-align: center;
+}
+
+.get-quote-form iframe {
+    height: 1200px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .box-data {
+        padding: 5%;
+        margin-top: -30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .detail {
+        width: auto;
+        height: 100%;
+    }
+
+    .detail2 {
+        width: auto;
+        height: 100%;
+    }
+
+    .btn01 {
+        padding: 5px 10px;
+    }
+
+    .btn02 {
+        padding: 5px 10px;
+    }
+
+    .contact-us .hero {
+        margin-left: 5%;
+    }
+
+    .contact-us form {
+        width: 100%;
+    }
+
+    .contact-us .boox {
+        margin-right: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Home page */
+
+    .menu-btn {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .nav-bar li img {
+        display: block;
+        height: 20px;
+        width: 20px;
+    }
+
+    .detail p {
+        font-size: 12px;
+    }
+
+    .detail img {
+        height: 15px;
+        width: 15px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
+
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 40vh;
+        padding-top: 40px;
+        line-height: 1px;
+        margin-top: 5px;
+        text-align: center;
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+        background-color: rgb(238, 236, 236);
+    }
+
+    .nav-bar li {
+        text-align: left;
+        width: 100%;
+        padding: 5px 50px;
+        margin-top: 20px;
+    }
+
+    nav ul li::after {
+        display: none;
+    }
+
+    .Experience-Machining {
+        grid-template-columns: auto;
+    }
+
+    .container {
+        max-width: 1540px;
+        margin: 5%;
+    }
+
+    .box-data {
+        margin-left: 40px;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .box-data .detail {
+        width: 100%;
+        height: 150%;
+    }
+
+    .box-data .detail2 {
+        width: 100%;
+        height: 150%;
+    }
+
+    .blurb {
+        margin-left: 40px;
+    }
+
+    .hero {
+        grid-template-columns: auto;
+    }
+
+    .our-service .box {
+        width: 80%;
+        height: auto;
+    }
+
+    .Experience h1 {
+        width: 100%;
+    }
+
+    .Experience p {
+        width: 100%;
+    }
+
+    .menu-bar li {
+        line-height: 20px;
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .menu-bar {
+        margin-top: 20px;
+    }
+
+
+    .footer .detail2 a p {
+        margin-top: -15px;
+        margin-left: 20px;
+    }
+
+    .footer .detail2 a {
+        font-size: 12px;
+    }
+
+    .footer .detail2 img {
+        max-height: 12px;
+        max-width: 12px;
+    }
+
+    .logo1 {
+        max-height: 80px;
+    }
+
+    .Gopi-Engineering p {
+        font-size: 12px;
+    }
+
+
+    /* about-us page */
+    .about-us p {
+        margin: auto;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    /* gallery page */
+    .img-gallery {
+        margin: 10%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    /* contact-us page */
+
+    .contact-us .hero {
+        margin-left: 5%;
+    }
+
+    .contact-us .boox {
+        margin-right: 60%;
+    }
+
+    .form-map .form-detail iframe {
+        height: 1100px;
+        width: 100%;
+    }
+
+    /* get-quote page  */
+}
+
+
+@media screen and (max-width:425px) {
+
+    .detail {
+        margin-left: -48px;
+    }
+
+    .detail p {
+        font-size: 15px;
+
+    }
+
+    .detail img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .detail {
+        width: auto;
+        height: 100%;
+    }
+
+    .detail2 {
+        width: auto;
+        height: 100%;
+    }
+
+    .hero {
+        grid-template-columns: auto;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .btn1 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+    .btn2 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+    .box-data .detail {
+        width: auto;
+        height: 100%;
+    }
+
+    .box-data {
+        margin-left: 70px;
+    }
+
+    .box-data .detail2 {
+        width: auto;
+        margin-left: -48px;
+        height: 100%;
+    }
+
+    .Experience-Machining {
+        grid-template-columns: auto;
+    }
+
+    .our-service {
+        text-align: center;
+    }
+
+    .our-service .box {
+        margin: 1%;
+        margin-left: -10px;
+        width: 90%;
+    }
+
+    .our-service .box .white h2 {
+        font-size: 20px;
+    }
+
+    .our-service .box .white p {
+        font-size: 15px;
+    }
+
+    .process-works h1 {
+        text-align: center;
+    }
+
+    .process .box .white p {
+        font-size: 15px;
+    }
+
+    .process .box .white h1 {
+        font-size: 20px;
+    }
+
+    .Experience h1 {
+        font-size: 30px;
+    }
+
+    .Experience p {
+        font-size: 14px;
+    }
+
+    .Experience h1 {
+        font-size: 40px;
+    }
+
+    .Experience p {
+        font-size: 15px;
+    }
+
+    .btn01 {
+        padding: 3px 5px;
+    }
+
+    .btn02 {
+        padding: 3px 5px;
+    }
+
+    .footer {
+        display: grid;
+        overflow: hidden;
+        height: 80vh;
+        width: auto;
+    }
+
+    .footer .menu-bar li {
+        font-size: 14px;
+        margin-left: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+    .footer .menu-bar {
+        margin-top: 30px;
+        gap: 5px;
+    }
+
+    .footer .detail2 {
+        width: 60%;
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+
+
+    .footer .detail2 p {
+        font-size: 15px;
+    }
+
+    .footer .logo1 {
+        margin-left: 35%;
+    }
+
+
+    .Gopi-Engineering p {
+        font-size: 10px;
+    }
+
+    /* about-us page */
+    .about-us p {
+        margin: auto;
+        position: relative;
+    }
+
+    /* gallery page */
+    .img-gallery {
+        margin: 15%;
+        row-gap: 13px;
+    }
+
+    /* certificate page */
+    .certificate {
+        margin: 3%;
+    }
+
+    .certificate .img {
+        max-height: 500px;
+        max-width: 500px;
+    }
+
+    /* contact-us page */
+
+    .contact-us .location {
+        margin-left: 25%;
+        width: 250px;
+
+    }
+
+    .contact-us .mobile-no {
+        margin-left: 25%;
+        width: 250px;
+    }
+
+    .contact-us .email {
+        margin-left: 25%;
+        width: 250px;
+
+    }
+
+    .contact-us h1 {
+        margin-left: -50%;
+    }
+
+    .form-map .form-detail iframe {
+        height: 1100px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* get-quote page  */
+
+}
+
+@media screen and (max-width:375px) {
+
+    /* home page */
+
+    .detail {
+        margin-left: -48px;
+    }
+
+    .detail p {
+        font-size: 13px;
+
+    }
+
+    .detail img {
+        height: 15px;
+        width: 15px;
+    }
+
+    .hero {
+        grid-template-columns: auto;
+    }
+
+    .Experience-Machining {
+        grid-template-columns: auto;
+    }
+
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .btn1 {
+        padding: 3px 5px;
+    }
+
+    .btn2 {
+        padding: 3px 5px;
+    }
+
+    .box-data {
+        margin-left: 70px;
+    }
+
+    .box-data .detail {
+        height: 100%;
+    }
+
+    .box-data .detail2 {
+        height: 100%;
+    }
+
+    .Experience-Machining {
+        grid-template-columns: auto;
+    }
+
+    .our-service .box {
+        width: 80%;
+    }
+
+    .our-service .box .white h2 {
+        font-size: 18px;
+    }
+
+    .our-service .box .white p {
+        font-size: 12px;
+    }
+
+    .process .box .white p {
+        font-size: 12px;
+    }
+
+    .process .box .white h1 {
+        font-size: 12px;
+    }
+
+
+    .Experience h1 {
+        font-size: 30px;
+    }
+
+    .Experience p {
+        font-size: 14px;
+    }
+
+    .btn1 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+    .btn2 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+    .btn01 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+
+    .btn02 {
+        font-size: 15px;
+        padding: 3px 5px;
+    }
+
+    .footer {
+        display: grid;
+        overflow: hidden;
+        height: 80vh;
+        width: auto;
+    }
+
+    .footer .menu-bar li {
+        font-size: 14px;
+        margin-left: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+    .footer .menu-bar {
+        margin-top: 30px;
+        gap: 5px;
+    }
+
+    .footer .detail2 {
+        width: 60%;
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+
+
+    .footer .detail2 p {
+        font-size: 15px;
+    }
+
+    .footer .logo1 {
+        margin-left: 35%;
+    }
+
+    .Gopi-Engineering p {
+        font-size: 10px;
+    }
+
+    /* about-us page */
+    .about-us p {
+        margin: auto;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    /* gallery page */
+    .img-gallery {
+        margin: 10%;
+        row-gap: 10px;
+    }
+
+    /* certificate page */
+    .certificate {
+        margin: 4%;
+    }
+
+    .certificate .img {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    /* contact-us page */
+
+
+    .contact-us .hero {
+        margin-left: -20px;
+    }
+
+    .contact-us h1 {
+        margin-left: -42%;
+    }
+
+    .contact-us .location {
+        font-size: 15px;
+    }
+
+    .contact-us .mobile-no {
+        font-size: 15px;
+    }
+
+    .contact-us .email {
+        font-size: 15px;
+    }
+
+    .form-map .form-detail iframe {
+        height: 1200px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+
+    /* get-quote page  */
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .detail p {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .detail {
+        font-size: 9px;
+    }
+
+    .btn1 {
+        margin: 1%;
+        padding: 3px 4px;
+    }
+
+    .btn2 {
+        margin: 1%;
+        padding: 3px 4px;
+    }
+
+    .box-data {
+        margin-left: 20%;
+    }
+
+    .btn01 {
+        margin: 1%;
+        font-size: 15px;
+        padding: 3px 4px;
+    }
+
+    .btn02 {
+        margin: 1%;
+        font-size: 15px;
+        padding: 3px 4px;
+    }
+
+
+    .detail img {
+        height: 12px;
+        width: 12px;
+    }
+
+    .our-service {
+        text-align: center;
+    }
+
+    .process-works h1 {
+        text-align: center;
+    }
+
+    .process-works {
+        margin: 6%;
+    }
+
+    .process-works .box {
+        width: 100%;
+    }
+
+    .our-service .box {
+        margin: 1%;
+        width: 69%;
+    }
+
+    .Experience {
+        margin: 6%;
+    }
+
+    .footer {
+        display: grid;
+        overflow: hidden;
+        height: 80vh;
+        width: auto;
+    }
+
+    .footer .menu-bar li {
+        font-size: 14px;
+        margin-left: -30px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+
+    .footer .menu-bar {
+        margin-top: 30px;
+        gap: 5px;
+    }
+
+    .footer .detail2 {
+        width: 60%;
+        margin-left: 23%;
+        margin-top: 5%;
+    }
+
+
+    .footer .detail2 p {
+        font-size: 15px;
+    }
+
+    .footer .logo1 {
+        margin-left: 5%;
+    }
+
+    .Gopi-Engineering p {
+        font-size: 10px;
+    }
+
+
+    /* about-us page */
+    .about-us p {
+
+        margin: auto;
+        position: relative;
+        text-align: left;
+    }
+
+    /* gallery page */
+    .img-gallery {
+        margin: 4%;
+        row-gap: 8px;
+    }
+
+    /* certificate page */
+    .certificate {
+        margin: 5%;
+    }
+
+    .certificate .img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    /* contact page */
+
+    .contact-us .location {
+        margin-left: 25%;
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .contact-us .mobile-no {
+        margin-left: 25%;
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .contact-us .email {
+        margin-left: 25%;
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .form-map .form-detail iframe {
+        height: 1200px;
+        width: 100%;
+        margin-left: 1px;
+    }
+
+    /* get quote page */
+
+}
