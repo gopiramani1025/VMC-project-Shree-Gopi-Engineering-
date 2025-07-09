@@ -1504,7 +1504,7 @@ nav a:hover::after {
     }
 
     .container {
-        max-width: 320px;
+        max-width: 300px;
         margin: auto;
     }
 
@@ -1519,7 +1519,7 @@ nav a:hover::after {
 
     .btn2 {
         margin: 1%;
-        padding: 3px 4px;
+        padding: 2px 3px;
     }
 
     .box-data {
@@ -1557,6 +1557,7 @@ nav a:hover::after {
     }
 
     .process-works .box {
+
         width: 100%;
     }
 
@@ -1607,10 +1608,6 @@ nav a:hover::after {
     .Gopi-Engineering p {
         font-size: 10px;
     }
-
-    
-
-    
 
     /* about-us page */
     .about-us p {
