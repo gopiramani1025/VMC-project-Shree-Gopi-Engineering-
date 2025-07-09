@@ -1561,8 +1561,8 @@ nav a:hover::after {
     }
 
     .our-service .box {
-        margin: 1%;
-        width: 69%;
+        width: 60%;
+        margin-left: 20px;
     }
 
     .Experience {
