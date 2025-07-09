@@ -208,7 +208,8 @@ nav a:hover::after {
 }
 
 .box-data .detail {
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 200%;
     text-align: center;
@@ -223,6 +224,9 @@ nav a:hover::after {
 }
 
 .box-data .detail2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 200%;
     color: white;
@@ -547,14 +551,13 @@ nav a:hover::after {
     width: auto;
     height: auto;
     padding: 1px;
-    background-color: rgb(157, 36, 36);
+    background-color: rgb(174, 38, 38);
     color: white;
 }
 
 .Gopi-Engineering p {
     font-size: 16px;
 }
-
 
 
 /* about-us page */
@@ -610,19 +613,21 @@ nav a:hover::after {
 }
 
 .review {
+    margin: 1%;
+    padding: 5%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    text-align: center;
+    gap: 50px;
+    text-align: left;
+    color: rgb(43, 43, 101);
 }
 
 .testi-box {
+    padding: 5%;
     height: auto;
     width: auto;
     border: 1px solid transparent;
     position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 5px;
     background-color: whitesmoke;
 }
 
@@ -631,7 +636,8 @@ nav a:hover::after {
 }
 
 .testi-info h4 {
-    font-size: 13px;
+    text-align: center;
+    font-size: 16px;
 }
 
 
@@ -1207,6 +1213,12 @@ nav a:hover::after {
         position: relative;
     }
 
+    .review {
+        width: 100%;
+        margin-left: -20px;
+    }
+
+
     /* gallery page */
     .img-gallery {
         margin: 15%;
@@ -1411,6 +1423,30 @@ nav a:hover::after {
         font-size: 1rem;
     }
 
+    .review {
+        width: auto;
+        margin-left: -20px;
+    }
+    
+    .clients h2 {
+        font-size: 15px;
+    }
+
+    .clients h1 {
+        font-size: 25px;
+    }
+
+    .testi-content p {
+        font-size: 10px;
+    }
+
+    .testi-info h4 {
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+
     /* gallery page */
     .img-gallery {
         margin: 10%;
@@ -1572,6 +1608,9 @@ nav a:hover::after {
         font-size: 10px;
     }
 
+    
+
+    
 
     /* about-us page */
     .about-us p {
@@ -1580,6 +1619,28 @@ nav a:hover::after {
         position: relative;
         text-align: left;
     }
+    .review {
+        width: auto;
+        margin-left: -20px;
+    }
+
+    .clients h2 {
+        font-size: 15px;
+    }
+
+    .clients h1 {
+        font-size: 25px;
+    }
+
+    .testi-content p {
+        font-size: 10px;
+    }
+
+    .testi-info h4 {
+        text-align: center;
+        font-size: 10px;
+    }
+
 
     /* gallery page */
     .img-gallery {
